@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden
+}
+body {
+  overflow-y: auto;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Используйте auto здесь, чтобы разрешить прокрутку при необходимости */
+  background:linear-gradient(90deg, #89b1f0,#f8abd8,#e8f57f);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
+.KatissNails {
+  left: 800px;
+  top: 44px;
+  display: flex;
+  text-align: center;
+  color: black;
+  font-size: 80px;
+  font-family: 'Emilys Candy', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.LiteButton button,
+.MediumButton button,
+.HardButton button {
+  margin: 10px;
+  padding: 15px 30px;
+  width: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #BDCDEF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px black solid;
+  transition: background-color 0.3s ease;
+}
+
+.Lite,
+.Medium,
+.Hard {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+ul.Design {
+  margin-top: -10px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-family: 'Fresca', sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+ul.Design li {
+  display: inline;
+}
+
+li.firststar {
+  margin-top: -30px;
+}
+
+li.secondstar {
+  margin-right: 16px;
+  margin-top: 50px;
+}
+
+li.text {
+  margin-right: 200px;
+  margin-top: -40px;
+}
+
+.Main,
+.Buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Buttons {
+  text-align: center;
+
+  align-items: center;
+}
+
+.photo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.square-image {
+  width: 200px; /* Установите нужный размер, например, 100px */
+  height: 200px; /* Установите нужный размер, например, 100px */
+  object-fit: cover; /* Обрезаем изображение до заданных размеров */
+  border-radius: 8px;
+  margin: 10px;
+}
+.photo-container img.square-image {
+  max-width: none; /* Переопределяем максимальную ширину для изображений в .photo-container */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Добавьте стили для мобильных устройств здесь */
+  .KatissNails {
+    font-size: 60px;
+  }
+  li.firststar {
+    margin-top: -20px;
+    margin-left: -150px;
+    scale: 90%;
+  }
+  
+  li.secondstar {
+    margin-right: -5px;
+    margin-top: 30px;
+    margin-left: -10px;
+    scale: 90%;
+  }
+  html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+  li.text {
+    margin-right: 0;
+    margin-top: -60px;
+  }
+
+  .LiteButton button,
+  .MediumButton button,
+  .HardButton button {
+    width: 200x;
+    font-size: 40px;
+  }
+  li.text {
+    font-size: 30px;
+   }
+  
+}
